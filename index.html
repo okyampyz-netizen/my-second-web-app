@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFE LUMIÈRE | 心地よい時間を過ごすカフェ</title>
+    <meta
+      name="description"
+      content="自家焙煎コーヒーと手作りスイーツが楽しめる、おしゃれなカフェ。"
+    />
+    <meta name="robots" content="index,follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+        color: #444;
+        background: #faf8f4;
+        line-height: 1.7;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        z-index: 999;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-family: "Playfair Display", serif;
+        color: #6b4f3b;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #444;
+        margin-left: 25px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #b8865b;
+      }
+
+      .hero {
+        height: 100vh;
+        background: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80")
+          center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-content {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 50px;
+        border-radius: 15px;
+      }
+
+      .hero h1 {
+        font-size: 60px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .hero p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 30px;
+        background: #b8865b;
+        color: white;
+        padding: 14px 35px;
+        text-decoration: none;
+        border-radius: 40px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #8d6544;
+      }
+
+      section {
+        padding: 90px 10%;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 36px;
+        color: #6b4f3b;
+        margin-bottom: 40px;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .about img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      footer {
+        background: #3d3128;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      @media (max-width: 768px) {
+        .about {
+          grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+          font-size: 42px;
+        }
+
+        nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">CAFE M!LK</div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#access">Access</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Good Coffee.<br />Good Time.</h1>
+
+        <p>
+          M!LKを聴きながら<br />
+          アモーレな空間を<br />お楽しみください
+        </p>
+
+        <a href="#menu" class="btn">MENUを見る</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+
+      <div class="about">
+        <img
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+          alt="Cafe"
+        />
+
+        <div>
+          <h3>街角の小さなカフェ</h3>
+
+          <p>
+            一杯ずつ丁寧に淹れる自家焙煎コーヒーと、
+            毎朝焼き上げるスイーツをご用意しています。
+            ゆったりとした時間をお楽しみください。カラオケもできます（M!LK限定）
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <div class="menu-grid">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&w=800&q=80"
+          />
+
+          <div class="card-content">
+            <h3>コーヒーが飲めません</h3>
+
+            <p>¥550</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80"
+          />
+
+          <div class="card-content">
+            <h3>じゅうたろラテ</h3>
+
+            <p>¥650</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80"
+          />
+
+          <div class="card-content">
+            <h3>モー烈ドーナツ</h3>
+
+            <p>¥700</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access">
+      <h2>Access</h2>
+
+      <p style="text-align: center">
+        〒000-0000 当別<br />
+        営業時間：9:00〜20:00<br />
+        定休日：毎週水曜日
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 CAFE M!LK All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
